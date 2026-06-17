@@ -26,6 +26,7 @@ pipeline {
 	sh 'java -jar target/SimpleMaven-1.0-SNAPSHOT.jar'
 	}
 	}
+	}
 	
 	post{
 	success{
@@ -36,9 +37,3 @@ pipeline {
 	}
 	}
 	}
-	
-	
-
-         
-	
-	
