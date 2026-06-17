@@ -16,9 +16,11 @@ pipeline {
 	}
 	}
 	stage('Test'){
-	steps
+	steps{
+		sh 'mvn test'
 	}
 	}
+	
 	stage('Run Application'){
 	steps{
 	sh 'java -jar target/SimpleMaven-1.0-SNAPSHOT.jar'
